@@ -1,3 +1,4 @@
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,4 +10,11 @@ public class HelloWorldServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().println("<h1>Hello, World!</h1>");
     }
+
+//    public void doPost(HttpServletRequest req, HttpServletResponse res)
+//            throws ServletException, IOException {
+//
+//        String id = req.getParameter("username");
+//        String password = req.getParameter("password");
+//    }
 }
